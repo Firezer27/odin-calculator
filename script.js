@@ -4,29 +4,28 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
-function multiply(arr) {
-  return arr.reduce((total, num) => total * num);
+function multiply(a, b) {
+  return a * b;
 }
-
 function divide(a, b) {
   if (a == b) {
-    return;
+    return "Not divide";
   }
   return a / b;
 }
 function operate(operator, a, b) {
-  switch (operate) {
+  switch (operator) {
     case "+":
-      add(a, b);
+      console.log(add(a, b));
       break;
     case "-":
-      subtract(a, b);
+      console.log(subtract(a, b));
       break;
     case "*":
-      multiply(a, b);
+      console.log(multiply(a, b));
       break;
-    case "+":
-      add(a, b);
+    case "/":
+      console.log(divide(a, b));
       break;
     default:
       return;
